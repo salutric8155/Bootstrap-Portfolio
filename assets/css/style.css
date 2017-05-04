@@ -75,7 +75,7 @@ h1 {
 	right: 88px;
 	background-color: #fff;
 	float: right;
-	width: 280px;
+	width: 300px;/*280*/
 	height: 180px;
 	border: solid 5px #fff;
 }
@@ -91,6 +91,8 @@ p {line-height: 40px;
 }
 
 .social{
+	position: relative;
+	left: 20px;
 	display: inline-block;
 	width: 52px;
 	height: 52px;
@@ -150,6 +152,33 @@ footer {
   border-bottom: 0;
 }
 
+.arrow{
+	position: relative;
+	top: -430px;
+	left: 1100px;
+}
+
+#arrow {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-name: arrow;
+}
+
+@keyframes arrow {
+	  0% {
+	 	transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+    
+    100% {
+        transform: translate3d(0px, -100px, 0px);
+    }
+
+  }
 /* sticky footer that didnt work
 html,
 body {
